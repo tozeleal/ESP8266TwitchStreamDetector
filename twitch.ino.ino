@@ -10,9 +10,9 @@
  */
 
 //Zona de configurações
-const char* ssid = "NOS-DBC7"; //Nome do teu router
-const char* password = "Benav!l@_7480-215"; // Password do teu router
-const char* streamer = "litobee"; //Nome do Streamer que queiras se notificado
+const char* ssid = "SSID"; //Nome do teu router
+const char* password = "PASSWORD"; // Password do teu router
+const char* streamer = "STREAMER-NAME"; //Nome do Streamer que queiras se notificado
 const int espera = 1; //Numero de minutos de espera em cada verificação
 
 
