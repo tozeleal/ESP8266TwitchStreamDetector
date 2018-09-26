@@ -3,28 +3,34 @@
 #include <ArduinoJson.h>
 
 /**
+ * Portuguese:
  * Detector de estado de Streams para o ESP8266
  * Este programa foi feito durante uma stream de 2h (com muito paleio á mistura)
  * Agradecimentos especiais ao icezek0
  * 
+ * 
+ * English:
+ * Stream detector for the ESP8266
+ * This program was made in a 2h coding stream (with lots of talk in the middle)
+ * Special Thanks 
+ * 
  */
 
-//Zona de configurações
-const char* ssid = "SSID"; //Nome do teu router
-const char* password = "PASSWORD"; // Password do teu router
-const char* streamer = "STREAMER-NAME"; //Nome do Streamer que queiras se notificado
-const int espera = 1; //Numero de minutos de espera em cada verificação
+//Zona de configurações | Config Zone 
+const char* ssid = "SSID"; //Nome do teu router | Name of your router
+const char* password = "PASSWORD"; // Password do teu router | Password of your router
+const char* streamer = "STREAMER-NAME"; //Nome do Streamer que queiras se notificado | The Streamer that you want to be notified
+const int espera = 1; //Numero de minutos de espera em cada verificação | Number of minutes for each status update
+const char* ClientID = ""; //ClientID, obtem através da deste website www.glass.twitch.tv | ClientID, get from this website www.glass.twitch.tv 
 
-
-//NÃO MEXER!!!
+//NÃO MEXER! | Do not edit 
 const char* host = "api.twitch.tv";
 const int httpsPort = 443;
-const char* ClientID = "6m5p893h3tk8nelfsn9trvgcsrzjej";
+
 
 
 void setup() {
   
-  // put your setup code here, to run once:
   pinMode(2, OUTPUT);     // Initialize the LED_BUILTIN pin as an output
   digitalWrite(2, HIGH);  // Turn the LED off by making the voltage HIGH 
 }
